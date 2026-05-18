@@ -52,7 +52,7 @@ Changelog = "https://github.com/langextract/langextract/blob/main/CHANGELOG.md"
 where = ["src"]
 
 [tool.ruff]
-line-length = 88  # personal preference: match black's default
+line-length = 100  # slightly wider than black's default; easier to read on modern monitors
 target-version = "py310"
 src = ["src"]
 
