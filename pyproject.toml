@@ -52,7 +52,7 @@ Changelog = "https://github.com/langextract/langextract/blob/main/CHANGELOG.md"
 where = ["src"]
 
 [tool.ruff]
-line-length = 88  # match black's default for consistency with other projects I work on
+line-length = 100  # personal preference: slightly longer lines reduce unnecessary wrapping
 target-version = "py310"
 src = ["src"]
 
