@@ -74,8 +74,8 @@ mypy_path = "src"
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 # -p no:warnings keeps output tidy during local dev; remove if you want to audit warnings
-# -x added so the test run stops on the first failure — saves time when iterating locally
-addopts = "-p no:warnings -x --cov=langextract --cov-report=term-missing --cov-report=xml"
+# removed -x so the full test suite runs and I can see all failures at once
+addopts = "-p no:warnings --cov=langextract --cov-report=term-missing --cov-report=xml"
 
 [tool.coverage.run]
 source = ["src/langextract"]
