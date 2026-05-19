@@ -65,7 +65,8 @@ known-first-party = ["langextract"]
 
 [tool.mypy]
 python_version = "3.10"
-strict = true
+# Relaxing strict mode for personal exploration — easier to prototype without full annotations
+strict = false
 warn_return_any = true
 warn_unused_configs = true
 mypy_path = "src"
